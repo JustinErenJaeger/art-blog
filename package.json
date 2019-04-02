@@ -1,0 +1,39 @@
+{
+  "name": "artack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jquery": "^3.3.1",
+    "morgan": "~1.9.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "popper.js": "^1.14.7",
+    "request": "^2.88.0"
+  },
+  "description": "A blog about the different kind of art in the world",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinErenJaeger/art_blog.git"
+  },
+  "keywords": [
+    "painting"
+  ],
+  "author": "Justin Creighton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinErenJaeger/art_blog/issues"
+  },
+  "homepage": "https://github.com/JustinErenJaeger/art_blog#readme",
+}
+

@@ -1,0 +1,9 @@
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
