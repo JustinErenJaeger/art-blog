@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   // res.render('index', { title: 'ARTACK' });
 
 var data = {
-  title: "ARTACK",
+  title: "ANTARTICA",
   posts: Posts,
   message: false
 };

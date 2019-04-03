@@ -7,3 +7,10 @@ nav {
         grid-template-columns: repeat(6, 1fr);
     }
 }
+
+.featured-blogs {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 3rem;
+}
