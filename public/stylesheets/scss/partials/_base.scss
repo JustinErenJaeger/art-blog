@@ -18,6 +18,16 @@ nav {
     height: 4rem;
     background: rgba(255, 255, 255, 0.476);
 
+    div {
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+
     ul {
         height: 100%;
         margin: 0;
@@ -73,6 +83,11 @@ nav {
 
             a:hover {
                 color: rgb(255, 255, 255);
+            }
+
+            
+            a:hover::before {
+                width: 0;
             }
 
             a:hover::before {

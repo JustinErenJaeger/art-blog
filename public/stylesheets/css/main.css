@@ -14,6 +14,11 @@ nav {
   width: 100%;
   height: 4rem;
   background: rgba(255, 255, 255, 0.476); }
+  nav div img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem; }
   nav ul {
     height: 100%;
     margin: 0;
@@ -54,6 +59,9 @@ nav {
     nav ul li:nth-child(5) a:hover,
     nav ul li:nth-child(6) a:hover {
       color: white; }
+    nav ul li:nth-child(5) a:hover::before,
+    nav ul li:nth-child(6) a:hover::before {
+      width: 0; }
     nav ul li:nth-child(5) a:hover::before,
     nav ul li:nth-child(6) a:hover::before {
       width: 100%;
@@ -163,34 +171,6 @@ nav {
       position: absolute;
       left: 2rem;
       bottom: 1rem; }
-
-.latest:before {
-  content: "";
-  position: absolute;
-  left: -4rem;
-  top: 0;
-  bottom: 0;
-  width: 4rem;
-  background: rgba(0, 0, 0, 0.415);
-  z-index: 4;
-  transition: all 0.5s ease-in-out; }
-
-.latest:after {
-  content: "";
-  position: absolute;
-  right: -4rem;
-  top: 0;
-  bottom: 0;
-  width: 4rem;
-  background: rgba(0, 0, 0, 0.415);
-  z-index: 4;
-  transition: all 0.5s ease-in-out; }
-
-.latest:hover::before {
-  left: 100%; }
-
-.latest:hover::after {
-  right: 100%; }
 
 .latest:hover img {
   transform: scale(1);

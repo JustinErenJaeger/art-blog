@@ -4,6 +4,7 @@
     <title><%= title %></title>
     <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/css/main.css">
@@ -12,7 +13,8 @@
     <header>
         <nav>
             <div>
-
+                <!-- <i class="fas fa-palette"></i> -->
+                <img src="/images/logo.png" alt="">
             </div>  
             <ul>
                 <li>
@@ -43,46 +45,34 @@
             <div>
                 <h1><%= title %></h1>
             </div>
-            <p>The only Blog to find the coolest Art</p>
+            <p><%= intro %></p>
         </div>
     </header>
     <main class="featured-blogs">
+        <% blogs.posts.forEach(function(item) { %>
         <div class="latest">
             <div class="title">
-                <h5>SHADOW ART</h5>
+                <h5><%= item.title %></h5>
             </div>
             <div class="imgBox">
-                <img src="/images/two-people-shadow-art.jpg" alt="">
+                <img src="<%= item.image %>" alt="">
             </div>
             <div class="content">
-                <p>Shadow art is a unique form of sculptural art where the 2D shadows cast by a 3D sculpture are essential for the artistic effect. We introduce computational tools for the creation of shadow art and propose a design process where the user can directly specify the desired shadows by providing a set of binary images and corresponding projection information.</p>
-                <p>Aurthor: Soulcali Drago</p>
+                <p><%= item.description %></p>
+                <p><%= item.author %></p>
+                <p><%= item.date %></p>
             </div>
         </div>
-        <div class="latest">
-            <div class="title">
-                <h5>SHADOW ART</h5>
-            </div>
-            <div class="imgBox">
-                <img src="/images/realistic-eye.jpg" alt="">
-            </div>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ad! Exercitationem quis velit dolorum fuga, sint tempora dignissimos reprehenderit quam optio! Itaque dolorem aliquid natus laudantium quo assumenda neque sit!</p>
-                <p>Aurthor: Soulcali Drago</p>
-            </div>
-        </div>
-        <div class="latest">
-            <div class="title">
-                <h5>SHADOW ART</h5>
-            </div>
-            <div class="imgBox">
-                <img src="/images/turtle-grafitti.jpg" alt="">
-            </div>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ad! Exercitationem quis velit dolorum fuga, sint tempora dignissimos reprehenderit quam optio! Itaque dolorem aliquid natus laudantium quo assumenda neque sit!</p>
-                <p>Aurthor: Soulcali Drago</p>
-            </div>
-        </div>
+        <% }); %>
     </main>
+
+    <footer>
+        <div class="contact">
+
+        </div>
+        <div class="designer">
+            <p>Designer Justin Creighton &copy;2019</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Posts = ('../db.json');
+var Posts = require('../db.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,8 +8,9 @@ router.get('/', function(req, res, next) {
 
 var data = {
   title: "ANTARTICA",
-  posts: Posts,
-  message: false
+  blogs: Posts,
+  message: false,
+  intro: "The only Blog to find the coolest Art"
 };
 
 res.render("index", data)
