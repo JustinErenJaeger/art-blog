@@ -5,23 +5,27 @@
   "main": "app.js",
   "dependencies": {
     "jquery": "^3.3.1",
-    "nodemon": "^1.18.10",
     "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
     "popper.js": "^1.14.7",
     "request": "^2.88.0",
     "bootstrap": "^4.3.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[-"
+    "url": "git+https://github.com/JustinErenJaeger/art-blog.git"
   },
   "keywords": [
     "blog"
   ],
-  "author": "Justin Creighton",
-  "license": "ISC"
+  "author": "Soulcali Drago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinErenJaeger/art-blog/issues"
+  },
+  "homepage": "https://github.com/JustinErenJaeger/art-blog#readme"
 }
