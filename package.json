@@ -2,7 +2,7 @@
   "name": "art-blog",
   "version": "1.0.0",
   "description": "A blog about the different kind of art in the world",
-  "main": "app.js",
+  "main": "node app.js",
   "dependencies": {
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
