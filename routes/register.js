@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var users = require("../db.json").users;
+var users = require("../db.json");
 var request = require("request");
 
 // GETTING THE REGISTER PAGE

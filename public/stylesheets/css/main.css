@@ -1,9 +1,12 @@
+@font-face {
+  font-family: "Poiret One";
+  src: url(/fonts/PoiretOne-Regular.ttf); }
 body {
   margin: 0;
   padding: 0; }
 
 header {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(/images/art-artist-canvas-374054.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url(/images/art-artist-canvas-374054.jpg);
   background-size: 100% 52rem;
   height: 100vh; }
 
@@ -92,7 +95,7 @@ nav {
       letter-spacing: 0.4rem;
       position: relative;
       z-index: 2;
-      font-family: 'Poiret One', cursive; }
+      font-family: "Poiret One"; }
     .heading div h1::before {
       content: "";
       position: absolute;
@@ -113,10 +116,16 @@ nav {
     z-index: 1; }
   .heading p {
     font-size: 4rem;
-    font-family: 'Poiret One', cursive; }
+    font-family: 'Poiret One'; }
+
+.intro {
+  padding: 6rem 4rem; }
+  .intro p {
+    color: #bdbdbd;
+    font-size: 1.2rem; }
 
 .latest {
-  height: 20rem;
+  height: 100%;
   border: 0.2px solid rgba(0, 0, 0, 0.143);
   position: relative;
   overflow: hidden; }
@@ -141,7 +150,7 @@ nav {
       text-align: center; }
   .latest .imgBox {
     width: 100%;
-    height: 20rem; }
+    height: 100%; }
     .latest .imgBox img {
       width: 100%;
       height: 100%;
@@ -159,17 +168,27 @@ nav {
     transform: scale(1.2);
     transition: all 0.5s ease-in-out;
     opacity: 0;
-    filter: blur(2px);
+    filter: blur(1px);
     padding: 0 2rem; }
     .latest .content p:nth-child(1) {
       color: #b6b6b6;
       font-size: 16px;
-      padding-top: 4rem; }
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; }
     .latest .content p:nth-child(2) {
       color: #bdbdbd;
       font-size: 12px;
       position: absolute;
       left: 2rem;
+      bottom: 1rem; }
+    .latest .content p:nth-child(3) {
+      color: #bdbdbd;
+      font-size: 12px;
+      position: absolute;
+      right: 2rem;
       bottom: 1rem; }
 
 .latest:hover img {
@@ -185,17 +204,21 @@ nav {
 .latest:hover .title {
   top: -30rem; }
 
+.latest:nth-last-of-type(3) {
+  grid-row: span 2; }
+
 nav {
   display: grid;
-  grid-template-columns: 50% 50%; }
+  grid-template-columns: 40% 60%; }
   nav ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr); }
 
 .featured-blogs {
   display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2rem 3rem; }
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 20rem 20rem;
+  padding: 0 4rem;
+  grid-gap: 0.5rem; }
 
 /*# sourceMappingURL=main.css.map */

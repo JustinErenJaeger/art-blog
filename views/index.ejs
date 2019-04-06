@@ -15,7 +15,7 @@
             <div>
                 <!-- <i class="fas fa-palette"></i> -->
                 <img src="/images/logo.png" alt="">
-            </div>  
+            </div>
             <ul>
                 <li>
                     <a href="#">HOME</a>
@@ -45,11 +45,14 @@
             <div>
                 <h1><%= title %></h1>
             </div>
-            <p><%= intro %></p>
+            <p><%= slogan %></p>
         </div>
     </header>
+    <div class="intro">
+        <p>Welcome to ANTARTICA, the blog about Art. What is Art? some of you might ask, well, there are many types of art, but to name a few in a nutshell it would be Pencil sketches(Graphite), Grafitti and Painting. Now all of them are different and people enjoy different kinds of art such as looking at what the piece illustrates, because some art can convey deeper meaning then what meets the eye, but lets not dwell on that and get back to enjoying some art</p>
+    </div>
     <main class="featured-blogs">
-        <% blogs.posts.forEach(function(item) { %>
+        <% blogs.posts.forEach(function (item){ %>
         <div class="latest">
             <div class="title">
                 <h5><%= item.title %></h5>
@@ -59,16 +62,48 @@
             </div>
             <div class="content">
                 <p><%= item.description %></p>
-                <p><%= item.author %></p>
-                <p><%= item.date %></p>
+                <p>Author: <%= item.author %></p>
+                <p>Date: <%= item.date %></p>
             </div>
         </div>
         <% }); %>
+        <!-- <div class="latest">
+            <div class="title">
+                <h5>SHADOW ART</h5>
+            </div>
+            <div class="imgBox">
+                <img src="/images/realistic-eye.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ad! Exercitationem quis velit dolorum fuga, sint tempora dignissimos reprehenderit quam optio! Itaque dolorem aliquid natus laudantium quo assumenda neque sit!</p>
+                <p>Aurthor: Soulcali Drago</p>
+            </div>
+        </div>
+        <div class="latest">
+            <div class="title">
+                <h5>SHADOW ART</h5>
+            </div>
+            <div class="imgBox">
+                <img src="/images/turtle-grafitti.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ad! Exercitationem quis velit dolorum fuga, sint tempora dignissimos reprehenderit quam optio! Itaque dolorem aliquid natus laudantium quo assumenda neque sit!</p>
+                <p>Aurthor: Soulcali Drago</p>
+            </div>
+        </div> -->
     </main>
 
     <footer>
         <div class="contact">
-
+            <h6>ANTARTICA</h6>
+            <p>Contact No: 0844705809</p>
+            <p>Email: soulcali789@gmail.com</p>
+        </div>
+        <div class="archive">
+            <p><a href="#">Blog Archive</a></p>
+        </div>
+        <div class="other-blogs">
+            <h6>OTHER BLOGS</h6>
         </div>
         <div class="designer">
             <p>Designer Justin Creighton &copy;2019</p>

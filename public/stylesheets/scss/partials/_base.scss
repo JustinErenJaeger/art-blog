@@ -2,9 +2,9 @@ body {
     margin: 0;
     padding: 0;
 }
-  
+
 header {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(/images/art-artist-canvas-374054.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url(/images/art-artist-canvas-374054.jpg);
     background-size: 100% 52rem;
     height: 100vh;
 }
@@ -19,6 +19,12 @@ nav {
     background: rgba(255, 255, 255, 0.476);
 
     div {
+
+        // i {
+        //     font-size: 3rem;
+        //     color: red;
+        //     margin: 0;
+        // }
 
         img {
             width: 3rem;
@@ -69,7 +75,7 @@ nav {
 
         li:nth-child(5),
         li:nth-child(6) {
-            
+
             a {
                 color: rgba(0, 0, 0, 0.7);
                 transition: all 0.5s ease-in-out;
@@ -85,7 +91,7 @@ nav {
                 color: rgb(255, 255, 255);
             }
 
-            
+
             a:hover::before {
                 width: 0;
             }

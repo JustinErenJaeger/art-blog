@@ -13,10 +13,10 @@
             letter-spacing: 0.4rem;
             position: relative;
             z-index: 2;
-            font-family: 'Poiret One', cursive;
+            font-family: "Poiret One";
         }
-    
-        
+
+
         h1::before {
             content: "";
             position: absolute;
@@ -39,15 +39,24 @@
         left: 42.5rem;
         z-index: 1;
     }
-    
+
     p {
         font-size: 4rem;
-        font-family: 'Poiret One', cursive;
-    } 
+        font-family: 'Poiret One';
+    }
+}
+
+.intro {
+    padding: 6rem 4rem;
+    
+    p {
+        color: rgb(189, 189, 189);
+        font-size: 1.2rem;
+    }
 }
 
 .latest {
-    height: 20rem;
+    height: 100%;
     border: 0.2px solid rgba(0, 0, 0, 0.143);
     position: relative;
     overflow: hidden;
@@ -75,10 +84,10 @@
             text-align: center;
         }
    }
-    
+
     .imgBox {
         width: 100%;
-        height: 20rem;
+        height: 100%;
 
         img {
             width: 100%;
@@ -100,20 +109,33 @@
         transform: scale(1.2);
         transition: all 0.5s ease-in-out;
         opacity: 0;
-        filter: blur(2px);
+        filter: blur(1px);
 
         padding: 0 2rem;
 
         p:nth-child(1) {
             color: rgb(182, 182, 182);
             font-size: 16px;
-            padding-top: 4rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
         }
 
         p:nth-child(2) {
             color: rgb(189, 189, 189);
-            font-size: 12px;position: absolute;
+            font-size: 12px;
+            position: absolute;
             left: 2rem;
+            bottom: 1rem;
+        }
+
+        p:nth-child(3) {
+            color: rgb(189, 189, 189);
+            font-size: 12px;
+            position: absolute;
+            right: 2rem;
             bottom: 1rem;
         }
     }
@@ -133,4 +155,8 @@
 
 .latest:hover .title {
     top: -30rem;
+}
+
+.latest:nth-last-of-type(3){
+  grid-row: span 2;
 }
