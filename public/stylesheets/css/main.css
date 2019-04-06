@@ -250,18 +250,13 @@ footer {
       transform: scale(1.3);
       transition: all 0.5s ease-in-out; }
   .latest .content {
-    width: 100%;
-    height: 100%;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
     background: radial-gradient(rgba(0, 0, 0, 0.415), black);
     transform: scale(1.2);
     transition: all 0.5s ease-in-out;
     opacity: 0;
     filter: blur(1px);
+    white-space: pre-wrap;
     padding: 0 2rem; }
     .latest .content p:nth-child(1) {
       color: #b6b6b6;
@@ -299,6 +294,32 @@ footer {
 
 .latest:nth-last-of-type(3) {
   grid-row: span 2; }
+  .latest:nth-last-of-type(3) .content {
+    width: 100%;
+    top: 0;
+    left: -30rem;
+    bottom: 0; }
+
+.latest:nth-last-of-type(3):hover .content {
+  left: 0; }
+
+.latest:nth-last-of-type(2) .content {
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0; }
+
+.latest:nth-last-of-type(2):hover .content {
+  height: 100%; }
+
+.latest:nth-last-of-type(1) .content {
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0; }
+
+.latest:nth-last-of-type(1):hover .content {
+  height: 100%; }
 
 nav {
   display: grid;
