@@ -10,7 +10,7 @@ header {
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro';
 }
 
 nav {
@@ -19,12 +19,6 @@ nav {
     background: rgba(255, 255, 255, 0.476);
 
     div {
-
-        // i {
-        //     font-size: 3rem;
-        //     color: red;
-        //     margin: 0;
-        // }
 
         img {
             width: 3rem;
@@ -114,5 +108,135 @@ nav {
                 border-radius: 2rem;
             }
         }
+    }
+}
+
+footer {
+    height: 16rem;
+    padding: 2rem 4rem 2rem 4rem;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+
+    a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0.1rem;
+        background: rgba(255, 0, 0, 0.598);
+        transition: all 0.5s ease-in-out;
+    }
+
+    a:hover::before {
+        width: 100%;
+    }
+
+    .contact {
+        border-right: 0.5px dotted rgba(0, 0, 0, 0.292);
+        padding-left: 2rem;
+
+        h6 {
+            font-size: 2rem;
+            position: relative;
+            letter-spacing: 0.4rem;
+            position: relative;
+            z-index: 2;
+            font-family: "Poiret One";
+        }
+
+
+        h6::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 1.8rem;
+            height: 0.2rem;
+            background: red;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            font-family: "Dosis";
+            padding: 1rem 0;
+
+            i {
+                padding: 0.5rem;
+                margin-right: 2rem;
+                color: rgb(255, 255, 255);
+                font-size: 1rem;
+                background: rgba(255, 0, 0, 0.598);
+                border-radius: 0.5rem;
+            }
+        }
+    }
+
+    .archive {
+        border-right: 0.5px dotted rgba(0, 0, 0, 0.333);
+        padding-left: 8rem;
+
+        p {
+            
+            a {
+                font-size: 1.2rem;
+                letter-spacing: 0.1rem;
+                font-family: "Dosis";
+                text-transform: uppercase;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                position: relative;
+            }
+        }
+    }
+
+    .other-blogs {
+        padding-left: 12rem;
+
+        h6 {
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            font-family: "Dosis";
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            position: relative;
+        }
+
+        h6::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 7.5rem;
+            height: 0.1rem;
+            background: red;
+        }
+
+        p {
+
+            a {
+                font-size: 0.8rem;
+                letter-spacing: 0.1rem;
+                font-family: "Dosis";
+                text-transform: uppercase;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                position: relative;
+            }
+        }
+    }
+}
+
+.designer {
+    height: 4rem;
+    background: rgb(223, 223, 223);
+    width: calc(100vw - 9rem);
+    margin: 2rem auto 0 auto;
+
+    p {
+        text-align: center;
+        margin: 0;
+        padding-top: 1rem;
     }
 }

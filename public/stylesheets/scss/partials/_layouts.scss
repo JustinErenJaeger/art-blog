@@ -13,5 +13,12 @@ nav {
     grid-template-columns: 60% 40%;
     grid-template-rows: 20rem 20rem;
     padding: 0 4rem;
-    grid-gap: 0.5rem;
+    grid-gap: 0.3rem;
+}
+
+footer {
+    display: grid;
+    width: calc(100vw - 9rem);
+    margin: 8rem auto 0 auto;
+    grid-template-columns: 30% 30% 40%;
 }

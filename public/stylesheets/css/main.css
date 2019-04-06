@@ -11,7 +11,7 @@ header {
   height: 100vh; }
 
 p {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro'; }
 
 nav {
   width: 100%;
@@ -81,6 +81,99 @@ nav {
       height: 2rem;
       background: rgba(255, 0, 0, 0.598);
       border-radius: 2rem; }
+
+footer {
+  height: 16rem;
+  padding: 2rem 4rem 2rem 4rem;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3); }
+  footer a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.1rem;
+    background: rgba(255, 0, 0, 0.598);
+    transition: all 0.5s ease-in-out; }
+  footer a:hover::before {
+    width: 100%; }
+  footer .contact {
+    border-right: 0.5px dotted rgba(0, 0, 0, 0.292);
+    padding-left: 2rem; }
+    footer .contact h6 {
+      font-size: 2rem;
+      position: relative;
+      letter-spacing: 0.4rem;
+      position: relative;
+      z-index: 2;
+      font-family: "Poiret One"; }
+    footer .contact h6::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 1.8rem;
+      height: 0.2rem;
+      background: red; }
+    footer .contact p {
+      color: black;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      font-family: "Dosis";
+      padding: 1rem 0; }
+      footer .contact p i {
+        padding: 0.5rem;
+        margin-right: 2rem;
+        color: white;
+        font-size: 1rem;
+        background: rgba(255, 0, 0, 0.598);
+        border-radius: 0.5rem; }
+  footer .archive {
+    border-right: 0.5px dotted rgba(0, 0, 0, 0.333);
+    padding-left: 8rem; }
+    footer .archive p a {
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      font-family: "Dosis";
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+      position: relative; }
+  footer .other-blogs {
+    padding-left: 12rem; }
+    footer .other-blogs h6 {
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      font-family: "Dosis";
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+      position: relative; }
+    footer .other-blogs h6::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 7.5rem;
+      height: 0.1rem;
+      background: red; }
+    footer .other-blogs p a {
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+      font-family: "Dosis";
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+      position: relative; }
+
+.designer {
+  height: 4rem;
+  background: #dfdfdf;
+  width: calc(100vw - 9rem);
+  margin: 2rem auto 0 auto; }
+  .designer p {
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem; }
 
 .heading {
   text-align: center;
@@ -219,6 +312,12 @@ nav {
   grid-template-columns: 60% 40%;
   grid-template-rows: 20rem 20rem;
   padding: 0 4rem;
-  grid-gap: 0.5rem; }
+  grid-gap: 0.3rem; }
+
+footer {
+  display: grid;
+  width: calc(100vw - 9rem);
+  margin: 8rem auto 0 auto;
+  grid-template-columns: 30% 30% 40%; }
 
 /*# sourceMappingURL=main.css.map */
