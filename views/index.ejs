@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#"  onclick="signUpPopUp()">
                         <span>SIGN UP</span>
                     </a>
                 </li>
@@ -70,6 +70,20 @@
         <% }); %>
     </main>
 
+    <main class="sign-up" id="sign-up-pop-up">
+        <form action="http://localhost:3004/users" method="POST">
+            <div onclick="signUpPopUp()">
+                <span>CLOSE</span>
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <h6>SIGN UP</h6>
+            <p><input type="text" name="name" placeholder="USERNAME"></p>
+            <p><input type="email" name="name" placeholder="EMAIL"></p>
+            <p><input type="password" name="name" placeholder="PASSWORD"></p>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </main>
+
     <footer>
         <div class="contact">
             <h6>ANTARTICA</h6>
@@ -90,5 +104,6 @@
     <div class="designer">
         <p>DESIGNED BY JUSTIN CREIGHTON SCD &copy;2019</p>
     </div>
+    <script src="javascripts/sign-up-page-toggle.js"></script>
 </body>
 </html>

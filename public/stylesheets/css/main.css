@@ -321,6 +321,88 @@ footer {
 .latest:nth-last-of-type(1):hover .content {
   height: 100%; }
 
+.sign-up {
+  position: fixed;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.687);
+  z-index: 1;
+  transition: all 0.5s ease-in-out; }
+  .sign-up form {
+    width: 50%;
+    height: 80%;
+    background: linear-gradient(-70deg, #ff5252 50%, white 50%);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .sign-up form h6 {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 2rem;
+      margin-bottom: 7rem;
+      position: relative;
+      color: #494949;
+      font-family: "Poiret One"; }
+    .sign-up form h6::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 1.6rem;
+      height: 0.1rem;
+      background: red; }
+    .sign-up form p {
+      text-align: center;
+      margin-bottom: 3rem; }
+      .sign-up form p input {
+        width: 30rem;
+        height: 3rem;
+        font-size: 0.8rem;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.183);
+        position: relative;
+        border-radius: 0.4rem; }
+      .sign-up form p input[name="name"] {
+        padding-left: 1rem; }
+    .sign-up form button {
+      border: none;
+      padding: 0.6rem 1.4rem;
+      background: #ff6363;
+      margin-left: 8.8rem;
+      color: white; }
+    .sign-up form div {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 4rem;
+      height: 4rem; }
+      .sign-up form div i {
+        position: absolute;
+        font-size: 1.6rem;
+        color: white;
+        transition: all 0.5s ease-in-out; }
+      .sign-up form div span {
+        opacity: 0;
+        position: absolute;
+        right: 2rem;
+        color: white;
+        transition: all 0.5s ease-in-out; }
+    .sign-up form div:hover i {
+      transform: rotateZ(-360deg); }
+    .sign-up form div:hover span {
+      right: 5rem;
+      opacity: 1; }
+
+#sign-up-pop-up.active {
+  opacity: 1;
+  z-index: 4;
+  width: 100%;
+  height: 100%; }
+
 nav {
   display: grid;
   grid-template-columns: 40% 60%; }

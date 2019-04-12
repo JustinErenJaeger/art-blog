@@ -32,10 +32,10 @@ router.post("/", function(req, res, next) {
             console.log(usernameUsed);
         }
     }
-    // IF USERNAME IS NOT NOT VAILABLE CREATE A NEW MEMBERSHIP ACCOUNT
+    // IF USERNAME IS NOT AVAILABLE CREATE A NEW MEMBERSHIP ACCOUNT
     if (usernameUsed != true){
         request({
-            url:  "http://localhost: 8080/users",
+            url:  "http://localhost:8080",
             method: Posts,
             form: {
                 id: id,
@@ -50,7 +50,7 @@ router.post("/", function(req, res, next) {
         req.app.locals.regError = "registration Successful";
 
         // GOES TO SIGN IN PAGE AFTER YOU REGISTER
-        res.redirect("/sign-in");
+        res.redirect("/");
     }
     // IF USER IS ALREADY USED (USER NAME TAKEN)
     else if (usernameUsed == true) {
